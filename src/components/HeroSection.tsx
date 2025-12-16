@@ -55,7 +55,7 @@ export function HeroSection() {
                 <img
                   src={profileAvatar}
                   alt="Fathimathul Harshana"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top scale-110"
                 />
               </div>
               {/* Floating decoration */}
