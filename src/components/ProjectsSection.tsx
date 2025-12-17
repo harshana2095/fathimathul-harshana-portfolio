@@ -13,7 +13,7 @@ const projects = [
     ],
     techStack: ["React", "Node.js", "MySQL", "HTML", "CSS", "JavaScript"],
     featured: true,
-    github: "https://github.com/YOUR_USERNAME/YOUR_REPO", // Replace with your actual GitHub URL
+    github: "https://github.com/harshana2095/EasyMed.git", // Replace with your actual GitHub URL
     demo: "", // Add demo URL if available
   },
 ];
