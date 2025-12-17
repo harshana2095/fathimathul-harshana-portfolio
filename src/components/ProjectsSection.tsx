@@ -13,6 +13,8 @@ const projects = [
     ],
     techStack: ["React", "Node.js", "MySQL", "HTML", "CSS", "JavaScript"],
     featured: true,
+    github: "https://github.com/YOUR_USERNAME/YOUR_REPO", // Replace with your actual GitHub URL
+    demo: "", // Add demo URL if available
   },
 ];
 
@@ -91,14 +93,22 @@ export function ProjectsSection() {
 
                 {/* Buttons */}
                 <div className="flex flex-wrap gap-4">
-                  <Button variant="hero" size="lg">
-                    <ExternalLink size={18} />
-                    Live Demo
-                  </Button>
-                  <Button variant="heroOutline" size="lg">
-                    <Github size={18} />
-                    View Code
-                  </Button>
+                  {project.demo && (
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                      <Button variant="hero" size="lg">
+                        <ExternalLink size={18} />
+                        Live Demo
+                      </Button>
+                    </a>
+                  )}
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Button variant="heroOutline" size="lg">
+                        <Github size={18} />
+                        View Code
+                      </Button>
+                    </a>
+                  )}
                 </div>
               </div>
 
